@@ -18,13 +18,13 @@ def usage():
     print "'I thought what I'd do was, I'd pretend I was one of those deaf-mutes.'"
     print "----------------------------------------------------------------------"
     print
-    print "ntlmdictauthpy.py targeturl domainname userlist passwordlist"
+    print "hndat.py http://targeturl domainname userlist passwordlist"
     print
-    print "Userlist and Passwordlist must be in the same directory as ntlmdictauthpy.py python script."
+    print "Userlist and Passwordlist must be in the same directory as ntlmdictauthpy.py python script. HTTP or HTTPS."
     print
     print "Examples:"
     print
-    print "ntlmdictauthpy.py http://ntlm-login-page.com/ userlist.txt passwordlist.txt "
+    print "hndat.py http://ntlm-login-page.com/ testdomain userlist.txt passwordlist.txt "
     sys.exit(0)
  
 def NTLMConnectBrute(url, username, password,denymessage):
